@@ -9,27 +9,18 @@ body {
   max-width: 1200px;
 }
 
-.card {
-  font-family: "Source Serif Pro", "Cambria", "Charter", "Georgia", sans-serif;
-  font-size: 1.5rem;
-  box-shadow: -2px 2px 4px 0px rgba(0,0,0,0.5);
-  background-color: white;
-  color: hsl(0, 0%, 20%);
-  border-radius: 4px;
-  padding: 5px;
-}
-
-.description-container {
-  max-width: 8.5in;
-  margin: 1rem auto;
-}
-
 .download-link {
   float: right;
   border: none;
+  font-family: "Source Serif Pro", "Cambria", "Charter", "Georgia", sans-serif;
+  font-size: 1.5rem;
+  box-shadow: -2px 2px 4px 0px rgba(0,0,0,0.5);
   cursor: pointer;
   position: sticky;
   top: 10px;
+  background-color: white;
+  color: hsl(0, 0%, 20%);
+  padding: 5px;
   border-radius: 4px;
   margin-right: 10px;
 }
