@@ -79,7 +79,7 @@ ul {
 .multicolumn {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .experience-container h2 {
@@ -109,6 +109,10 @@ ul {
   main {
     width: 100%;
     box-shadow: none;
+  }
+
+  button {
+    display: none;
   }
 
   .download-link {
