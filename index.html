@@ -5,101 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="theme-color" content="#2a2d34" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,700|Lato"
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Libre+Caslon+Text&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="styles.css" />
     <title>Nathan Minchow Portfolio</title>
   </head>
 
   <body>
-    <header>
-      <img
-        id="background-image"
-        src="img/background.jpg"
-        alt="Picture of Mills Lake in Rocky Mountain National Park"
-      />
-      <div id="left-column-container">
-        <div class="circle-container">
-          <img src="img/nathan.jpg" alt="Picture of Nathan" />
+    <div class="container">
+      <div class="header-container">
+        <div class="animate__animated animate__fadeInDown text-container">
+          <div class="text">Nathan Minchow</div>
+          <div role="presentation" class="bar bar--1"></div>
+          <div role="presentation" class="bar bar--2"></div>
+          <div role="presentation" class="bar bar--3"></div>
+          <div role="presentation" class="bar bar--4"></div>
+          <div role="presentation" class="bar bar--5"></div>
+          <div
+            role="presentation"
+            class="vertical-bar vertical-bar--left"
+          ></div>
+          <div
+            role="presentation"
+            class="vertical-bar vertical-bar--right"
+          ></div>
+          <div
+            role="presentation"
+            class="vertical-bar vertical-bar--accent"
+          ></div>
         </div>
       </div>
-    </header>
-    <main>
-      <section id="title">
-        <h1>Hi, I'm Nathan Minchow</h1>
+
+      <div class="animate__animated animate__fadeIn profile-image-container">
+        <img src="img/nathan.jpeg" alt="Headshot of Nathan Minchow" />
+      </div>
+
+      <div class="header-description">
         <p>
-          I'm a software developer, musician, and occasional X-Files binger.
+          I'm a web developer, designer, musician, and occasional X-Files
+          binger.
         </p>
+
         <p>
-          I have extensive experience in web development, including internships
-          at Garmin, PaymentSpring/Nelnet, and First Data. More details are on
-          my <a href="doc/Resume2021.pdf">resume</a>.
+          I have extensive experience in web development at companies like
+          Garmin, PaymentSpring/Nelnet, and Bloomberg. More details are on my
+          resume.
         </p>
+
         <p>To see more of my work, take a look at some of my projects below.</p>
-      </section>
-      <section id="links">
-        <h2>Links</h2>
-        <p><a href="https://github.com/nspenner">Github</a></p>
-        <p><a href="https://codepen.io/nathanspenner">Codepen</a></p>
-        <p><a href="https://blog.nminchow.com">Blog</a></p>
-        <p><a href="https://dev.to/nathanminchow">DEV.to</a></p>
-        <p><a href="doc/Resume2021.pdf">Resume</a></p>
-      </section>
-      <section id="projects">
-        <h2>Projects</h2>
-        <p>
-          <a href="https://nspenner.github.io/werkweek">WerkWeek</a>: an app to
-          help manage time. Set alarms, countdowns, and more to help track your
-          day (or week!)
-        </p>
-        <p>
-          <a href="https://nspenner.github.io/nomo/"> nomo </a>: I created a
-          straightforward metronome that uses the Web Audio API to keep accurate
-          time and update dynamically.
-        </p>
-        <p>
-          <a
-            href="https://marketplace.visualstudio.com/items?itemName=NathanMinchow.create-matching-css-file"
-            >Create Matching CSS File</a
-          >: A VS Code utility to save some time when developing web
-          pages/components.
-        </p>
-        <p>
-          <a href="https://nspenner.github.io/theme-lab/">Dark-Mode</a>: I
-          implemented dark mode in a site template using
-          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/--*"
-            >CSS Custom Properties</a
-          >. I also wrote
-          <a
-            href="https://dev.to/nathanminchow/easy-website-themes-with-css-custom-properties-1pb7"
-            >an article</a
-          >
-          about the power of CSS variables in theme customization.
-        </p>
-        <p>
-          <a href="https://codepen.io/nathanspenner/pen/ZEEKMYN"
-            >Gradient Todo</a
-          >: A tiny frontend for a Todo app utilizing CSS gradients and
-          pseudo-elements.
-        </p>
-        <p>
-          <a href="dynamic_audio/dynamic_sound.html">Dynamic Audio Demo</a>: A
-          <a href="https://godotengine.org/">Godot</a> project created to
-          demonstrate dynamic audio tracks.
-        </p>
-      </section>
-      <section id="contact">
-        <h2>Contact</h2>
-        <p><a href="mailto:nathan.minchow@outlook.com">Email</a></p>
-        <p>
-          <a href="https://www.linkedin.com/in/nathan-minchow-b165baa5/"
-            >LinkedIn</a
-          >
-        </p>
-      </section>
-    </main>
+      </div>
+      <div class="text-container">
+        <div class="text">Projects</div>
+        <div role="presentation" class="bar bar--1"></div>
+        <div role="presentation" class="bar bar--2"></div>
+        <div role="presentation" class="bar bar--3"></div>
+        <div role="presentation" class="bar bar--4"></div>
+        <div role="presentation" class="bar bar--5"></div>
+        <div role="presentation" class="vertical-bar vertical-bar--left"></div>
+        <div role="presentation" class="vertical-bar vertical-bar--right"></div>
+        <div
+          role="presentation"
+          class="vertical-bar vertical-bar--accent"
+        ></div>
+      </div>
+    </div>
   </body>
   <script src="scripts.js"></script>
 </html>
