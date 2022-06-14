@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Libre+Caslon+Text&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Libre+Caslon+Text:ital@0;1&display=swap"
       rel="stylesheet"
     />
     <link
@@ -21,98 +21,70 @@
   </head>
 
   <body>
-    <!-- <div role="presentation" id="ex1" class="staff-presentation-layer">
-      <div class="floatbox staff-container staff-container--left" id="ex1-container">
-        <div id="ex1-layer" class="staff">
-          <div class="staff__bar"></div>
-          <div class="staff__bar"></div>
-          <div class="staff__bar"></div>
-          <div class="staff__bar"></div>
-          <div class="staff__bar"></div>
-        </div>
+    <div class="content-container">
+      <div class="header">
+        <h1 class="header__text">Nathan Minchow</h1>
+        <img
+          class="header__image"
+          src="img/nathan.jpeg"
+          alt="Nathan Minchow selfie"
+        />
       </div>
-    </div> -->
-    <!-- <div role="presentation" class="staff-presentation-layer staff-presentation-layer--top">
-      <div class="floatbox staff-container staff-container--left">
-        <div class="staff">
-          <div class="staff__bar staff__bar--top"></div>
-          <div class="staff__bar"></div>
-          <div class="staff__bar"></div>
-          <div class="staff__bar"></div>
-          <div class="staff__bar"></div>
-        </div>
-      </div>
-    </div> -->
-    <div class="container" id="page-container">
-      <div class="header-container">
-        <div class="animate__animated animate__fadeInDown text-container">
-          <div class="text">Nathan Minchow</div>
-          <div role="presentation" class="bar bar--1"></div>
-          <div role="presentation" class="bar bar--2"></div>
-          <div role="presentation" class="bar bar--3"></div>
-          <div role="presentation" class="bar bar--4"></div>
-          <div role="presentation" class="bar bar--5"></div>
-          <div
-            role="presentation"
-            class="vertical-bar vertical-bar--left"
-          ></div>
-          <div
-            role="presentation"
-            class="vertical-bar vertical-bar--right"
-          ></div>
-          <div
-            role="presentation"
-            class="vertical-bar vertical-bar--accent"
-          ></div>
-        </div>
-      </div>
-
-      <div class="animate__animated animate__fadeIn profile-image-container">
-        <img src="img/nathan.jpeg" alt="Headshot of Nathan Minchow" />
-      </div>
-
-      <div class="header-description">
+      <div class="description-container">
         <p>
           I'm a web developer, designer, musician, and occasional X-Files
           binger.
         </p>
-
         <p>
           I have extensive experience in web development at companies like
           Garmin, PaymentSpring/Nelnet, and Bloomberg. More details are on my
           resume.
         </p>
-
         <p>To see more of my work, take a look at some of my projects below.</p>
       </div>
-      <div class="header-description">
-        <p>
-          I'm a web developer, designer, musician, and occasional X-Files
-          binger.
-        </p>
-
-        <p>
-          I have extensive experience in web development at companies like
-          Garmin, PaymentSpring/Nelnet, and Bloomberg. More details are on my
-          resume.
-        </p>
-
-        <p>To see more of my work, take a look at some of my projects below.</p>
-      </div>
-      <div class="text-container">
-        <div class="text">Projects</div>
-        <div role="presentation" class="bar bar--1"></div>
-        <div role="presentation" class="bar bar--2"></div>
-        <div role="presentation" class="bar bar--3"></div>
-        <div role="presentation" class="bar bar--4"></div>
-        <div role="presentation" class="bar bar--5"></div>
-        <div role="presentation" class="vertical-bar vertical-bar--left"></div>
-        <div role="presentation" class="vertical-bar vertical-bar--right"></div>
-        <div
-          role="presentation"
-          class="vertical-bar vertical-bar--accent"
-        ></div>
-      </div>
+      <h2>Projects</h2>
+      <ol class="project-list">
+        <li class="project-list__item project-list__item--wide">
+          <div class="project">
+            <h3 class="project__title">Werkweek</h3>
+            <img
+              class="project__image"
+              src="img/Screenshot.png"
+              alt="Werkweek screenshot"
+            />
+          </div>
+        </li>
+        <li class="project-list__item">
+          <h3 class="project__title">Nomo</h3>
+          <img
+            class="project__image"
+            src="img/nomo.png"
+            alt="Nomo screenshot"
+          />
+        </li>
+        <li class="project-list__item">
+          <h3 class="project__title project__title--bottom">match-css</h3>
+          <img
+            class="project__image project__image--flipped"
+            src="img/demo.gif"
+            alt="Nomo screenshot"
+          />
+        </li>
+        <li class="project-list__item">Dark Mode</li>
+        <li class="project-list__item">Gradient Todo</li>
+      </ol>
+      <h2>Contact</h2>
+      <ul>
+        <li>Email</li>
+        <li>LinkedIn</li>
+      </ul>
+      <h2>Links</h2>
+      <ul>
+        <li>Github</li>
+        <li>Codepen</li>
+        <li>DEV.to</li>
+        <li>Resume</li>
+      </ul>
     </div>
   </body>
   <script src="scripts.js"></script>
