@@ -32,6 +32,16 @@ h2 {
   font-size: var(--text-medium);
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+a {
+  color: var(--font-color--primary);
+}
+
 body {
   font-family: var(--font-serif, "Libre Caslon Text", Georgia, serif);
   font-size: var(--text-small, 18px);
@@ -41,6 +51,10 @@ body {
 .content-container {
   max-width: 800px;
   margin: 0 auto;
+}
+
+.row {
+  display: flex;
 }
 
 .header {
@@ -74,6 +88,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
+  margin-bottom: 4rem;
 }
 
 .project-list__item {
@@ -99,13 +114,57 @@ body {
   align-self: flex-start;
 }
 
-.project_title--bottom {
-  align-self: flex-end;
+.project__title--bottom {
   top: calc(100% - 16px);
+}
+
+.project__title--right {
+  align-self: flex-end;
 }
 
 .project__image {
   max-width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.list-container {
+  flex: 1;
+}
+
+.list-container:last-child {
+  margin-left: 1rem;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-list__item {
+  margin: 1rem 0;
+}
+
+.link-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.link-list__item {
+  margin: 1rem 0;
+}
+
+@media screen and (max-width: 480px) {
+  .project-list {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .project-list__item {
+    height: 240px;
+  }
+
+  .project-list__item--wide {
+    grid-column: span 1;
+  }
 }
