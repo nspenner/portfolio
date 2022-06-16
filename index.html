@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Libre+Caslon+Text:ital@0;1&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap"
       rel="stylesheet"
     />
     <link
@@ -23,13 +23,11 @@
   <body>
     <div class="content-container">
       <div class="header">
+        <span class="header__subtext">Hello, my name is</span>
         <h1 class="header__text">Nathan Minchow</h1>
-        <img
-          class="header__image"
-          src="img/nathan.jpeg"
-          alt="Nathan Minchow selfie"
-        />
       </div>
+    </div>
+    <div class="content-container">
       <div class="description-container">
         <p>
           I'm a web developer, designer, musician, and occasional X-Files
@@ -37,12 +35,23 @@
         </p>
         <p>
           I have extensive experience in web development at companies like
-          Garmin, PaymentSpring/Nelnet, and Bloomberg. More details are on my
-          resume.
+          Garmin, Nelnet, and Bloomberg. More details are on my
+          <a target="_blank" href="doc/Resume2021.pdf">resume</a>.
         </p>
-        <p>To see more of my work, take a look at some of my projects below.</p>
+        <p>To see more of my work, take a look at my projects below.</p>
       </div>
-      <h2>Projects</h2>
+    </div>
+    <div class="text-container">
+      <h2 class="text">Projects</h2>
+      <div role="presentation" class="bar bar--1"></div>
+      <div role="presentation" class="bar bar--2"></div>
+      <div role="presentation" class="bar bar--3"></div>
+      <div role="presentation" class="bar bar--4"></div>
+      <div role="presentation" class="bar bar--5"></div>
+      <div role="presentation" class="vertical-bar vertical-bar--left"></div>
+      <div role="presentation" class="vertical-bar vertical-bar--accent"></div>
+    </div>
+    <div class="content-container">
       <ol class="project-list">
         <li class="project-list__item project-list__item--wide">
           <h3 class="project__title">Werkweek</h3>
@@ -73,7 +82,7 @@
           />
         </li>
         <li class="project-list__item">
-          <h3 class="project__title">Dark Mode</h3>
+          <h3 class="project__title project__title--right">Dark Mode</h3>
           <img
             class="project__image"
             src="img/darkmode.gif"
@@ -89,15 +98,28 @@
           />
         </li>
       </ol>
+    </div>
+    <div class="background-lines" role="presentation">
+      <div class="background-lines__line"></div>
+      <div class="background-lines__line"></div>
+      <div class="background-lines__line"></div>
+      <div class="background-lines__line"></div>
+      <div class="background-lines__line"></div>
+    </div>
+    <div class="content-container">
       <div class="row">
         <div class="list-container">
           <h2>Contact</h2>
           <ul class="contact-list">
             <li class="contact-list__item">
-              <a target="_blank" href="mailto:nathan.minchow@outlook.com">Email</a>
+              <a target="_blank" href="mailto:nathan.minchow@outlook.com"
+                >Email</a
+              >
             </li>
             <li class="contact-list__item">
-              <a target="_blank" href="https://www.linkedin.com/in/nathan-minchow-b165baa5/"
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/nathan-minchow-b165baa5/"
                 >LinkedIn</a
               >
             </li>
@@ -110,7 +132,9 @@
               <a target="_blank" href="https://github.com/nspenner">Github</a>
             </li>
             <li class="link-list__item">
-              <a target="_blank" href="https://codepen.io/nathanspenner">Codepen</a>
+              <a target="_blank" href="https://codepen.io/nathanspenner"
+                >Codepen</a
+              >
             </li>
             <li class="link-list__item">
               <a target="_blank" href="https://dev.to/nathanminchow">DEV.to</a>
