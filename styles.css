@@ -374,7 +374,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transform: skewY(10deg);
+  transform: skewY(7deg);
   top: 500px;
 }
 
@@ -387,6 +387,12 @@ p {
   transform: skewY(-8deg) scale(8);
   height: 100px;
   top: -50px;
+}
+
+.background-lines--alt {
+  top: -250px;
+  transform: skewY(4deg);
+  rotate: 180deg x;
 }
 
 .background-lines__line {
