@@ -392,8 +392,7 @@ p {
 
 .background-lines--alt {
   top: -250px;
-  transform: skewY(4deg);
-  rotate: 180deg x;
+  transform: skewY(-4deg);
 }
 
 .background-lines__line {
