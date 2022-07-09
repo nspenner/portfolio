@@ -1,3 +1,16 @@
+const imageMouseovers = document.querySelectorAll(".image-mouseover");
+imageMouseovers.forEach((imageMouseover) => {
+  imageMouseover.onmouseenter = function () {
+    imageMouseover.style.opacity = "1";
+  };
+  imageMouseover.onclick = function () {
+    imageMouseover.style.opacity = "1";
+  }
+  imageMouseover.onmouseleave = function () {
+    imageMouseover.style.opacity = "0";
+  };
+});
+
 let constrain = 50;
 let mouseOverContainer = document.getElementById("page-container");
 let ex1Layer = document.getElementById("ex1-layer");
@@ -42,7 +55,7 @@ mouseOverContainer.onmouseleave = function (e) {
   ex2Layer.classList.add("reset");
 };
 
-mouseOverContainer.onmouseenter = function(e) {
+mouseOverContainer.onmouseenter = function (e) {
   ex1Layer.classList.remove("reset");
   ex2Layer.classList.remove("reset");
-}
+};
