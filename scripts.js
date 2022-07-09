@@ -1,26 +1,61 @@
-// var header = document.getElementById("left-column-container");
-// var title = document.getElementById("title");
-// var links = document.getElementById("links");
-// var projects = document.getElementById("projects");
-// var contact = document.getElementById("contact");
-// var elements = [title, links, projects, contact];
-// var colors = [
-//   "rgba(42, 45, 52, 1)",
-//   "rgba(0, 157, 220, 1)",
-//   "rgba(242, 100, 48, 1)",
-//   "rgba(0, 155, 114, 1)"
-// ];
+const imageMouseovers = document.querySelectorAll(".image-mouseover");
+imageMouseovers.forEach((imageMouseover) => {
+  imageMouseover.onmouseenter = function () {
+    imageMouseover.style.opacity = "1";
+  };
+  imageMouseover.onclick = function () {
+    imageMouseover.style.opacity = "1";
+  }
+  imageMouseover.onmouseleave = function () {
+    imageMouseover.style.opacity = "0";
+  };
+});
 
-// function setBackgroundTransition(element, color) {
-//   element.addEventListener("mouseenter", function(event) {
-//     header.style.backgroundColor = color;
-//   });
+let constrain = 50;
+let mouseOverContainer = document.getElementById("page-container");
+let ex1Layer = document.getElementById("ex1-layer");
+let ex2Layer = document.getElementById("ex2-layer");
 
-//   element.addEventListener("mouseleave", function(event) {
-//     header.style.backgroundColor = "rgba(255, 255, 255, 0)";
-//   });
-// }
+function transforms(x, y, el) {
+  let box = el.getBoundingClientRect();
+  let calcX = -(y - box.y - box.height / 2) / (constrain * 3);
+  let calcY = (x - box.x - box.width / 2) / (constrain * 8);
 
-// for (i = 0; i < elements.length; i++) {
-//   setBackgroundTransition(elements[i], colors[i]);
-// }
+  return (
+    "perspective(100px) " +
+    "   rotateX(" +
+    calcX +
+    "deg) " +
+    "   rotateY(" +
+    calcY +
+    "deg) " +
+    " skew(20deg, -45deg)"
+  );
+}
+
+function transformElement(el, xyEl) {
+  el.style.transform = transforms.apply(null, xyEl);
+}
+
+mouseOverContainer.onmousemove = function (e) {
+  let xy = [e.clientX, e.clientY];
+  let position = xy.concat([ex1Layer]);
+  let position2 = xy.concat([ex2Layer]);
+
+  window.requestAnimationFrame(function () {
+    transformElement(ex1Layer, position);
+    transformElement(ex2Layer, position2);
+  });
+};
+
+mouseOverContainer.onmouseleave = function (e) {
+  ex1Layer.style.transform = null;
+  ex1Layer.classList.add("reset");
+  ex2Layer.style.transform = null;
+  ex2Layer.classList.add("reset");
+};
+
+mouseOverContainer.onmouseenter = function (e) {
+  ex1Layer.classList.remove("reset");
+  ex2Layer.classList.remove("reset");
+};

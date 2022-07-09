@@ -5,101 +5,339 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="theme-color" content="#2a2d34" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,700|Lato"
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="links.css" />
     <title>Nathan Minchow Portfolio</title>
   </head>
 
   <body>
-    <header>
-      <img
-        id="background-image"
-        src="img/background.jpg"
-        alt="Picture of Mills Lake in Rocky Mountain National Park"
-      />
-      <div id="left-column-container">
-        <div class="circle-container">
-          <img src="img/nathan.jpg" alt="Picture of Nathan" />
+    <div role="presentation" class="background-lines-container">
+      <div class="background-lines background-lines--large">
+        <div class="background-lines__line"></div>
+        <div class="background-lines__line"></div>
+        <div class="background-lines__line"></div>
+        <div class="background-lines__line"></div>
+        <div class="background-lines__line"></div>
+      </div>
+    </div>
+    <div class="content-container content-container--large">
+      <div class="header">
+        <span class="header__subtext">Hello, my name is</span>
+        <h1 class="header__text">Nathan Minchow</h1>
+      </div>
+      <div class="description-container">
+        <p>
+          I'm a web developer, designer, musician, and occasional X-Files
+          binger.
+        </p>
+        <p class="cl-effect-7">
+          I have extensive experience in web development at companies like
+          Garmin, Nelnet, and Bloomberg. More details are on my
+          <a target="_blank" href="doc/Resume2021.pdf">resume</a>.
+        </p>
+        <p>To see more of my work, take a look at my projects below.</p>
+        <p class="cl-effect-7">
+          Want to get in touch?
+          <a target="_blank" href="mailto:nathan.minchow@outlook.com"
+            >Send me a message</a
+          >.
+        </p>
+      </div>
+    </div>
+    <div class="text-container">
+      <h2 class="text">Projects</h2>
+      <div role="presentation" class="bar bar--1"></div>
+      <div role="presentation" class="bar bar--2"></div>
+      <div role="presentation" class="bar bar--3"></div>
+      <div role="presentation" class="bar bar--4"></div>
+      <div role="presentation" class="bar bar--5"></div>
+      <div role="presentation" class="vertical-bar vertical-bar--left"></div>
+      <div role="presentation" class="vertical-bar vertical-bar--accent"></div>
+    </div>
+    <div role="presentation" class="positioned">
+      <div class="background-lines">
+        <div class="background-lines__line"></div>
+        <div class="background-lines__line"></div>
+        <div class="background-lines__line"></div>
+        <div class="background-lines__line"></div>
+        <div class="background-lines__line"></div>
+      </div>
+    </div>
+    <div class="content-container">
+      <ol class="project-list">
+        <li class="project-list__item project-list__item--wide">
+          <h3 class="project__title">Werkweek</h3>
+          <div class="image-container">
+            <div class="image-mouseover">
+              <div class="image-mouseover__column">
+                <p class="image-mouseover__description">
+                  An app to help manage time. Set alarms, countdowns, and more
+                  to help track your day (or week).
+                </p>
+                <div class="image-mouseover__row">
+                  <a
+                    class="image-mouseover__link"
+                    href="https://nspenner.github.io/werkweek"
+                    target="_blank"
+                    >View Project</a
+                  >
+                  <a
+                    class="image-mouseover__link image-mouseover__link--outline"
+                    href="https://github.com/nspenner/werkweek"
+                    target="_blank"
+                    >View Source</a
+                  >
+                </div>
+              </div>
+              <div class="image-mouseover__column">
+                <ul class="image-mouseover__technology-list image-mouseover__technology-list--large">
+                  <li>HTML5</li>
+                  <li>CSS</li>
+                  <li>React</li>
+                </ul>
+              </div>
+            </div>
+            <img
+              class="project__image"
+              src="img/Screenshot.png"
+              alt="Werkweek screenshot"
+            />
+          </div>
+        </li>
+        <li class="project-list__item">
+          <h3 class="project__title">Nomo</h3>
+          <div class="image-container">
+            <div class="image-mouseover image-mouseover--vertical">
+              <div class="image-mouseover__column">
+                <p class="image-mouseover__description">
+                  A no-nonsense metronome utilizing the Web Audio API to keep
+                  accurate time and update dynamically.
+                </p>
+                <div class="image-mouseover__row">
+                  <a
+                    class="image-mouseover__link"
+                    href="https://nspenner.github.io/nomo/"
+                    target="_blank"
+                    >View Project</a
+                  >
+                  <a
+                    class="image-mouseover__link image-mouseover__link--outline"
+                    href="https://github.com/nspenner/nomo"
+                    target="_blank"
+                    >View Source</a
+                  >
+                </div>
+              </div>
+              <div
+                class="image-mouseover__column image-mouseover__column--full"
+              >
+                <ul
+                  class="image-mouseover__technology-list image-mouseover__technology-list--horizontal"
+                >
+                  <li>Vue</li>
+                  <li>Web Audio API</li>
+                </ul>
+              </div>
+            </div>
+            <img
+              class="project__image"
+              src="img/nomo.png"
+              alt="Nomo screenshot"
+            />
+          </div>
+        </li>
+        <li class="project-list__item">
+          <h3
+            class="project__title project__title--bottom project__title--right"
+          >
+            match-css
+          </h3>
+          <div class="image-container">
+            <div class="image-mouseover image-mouseover--vertical">
+              <div class="image-mouseover__column">
+                <p class="image-mouseover__description">
+                  A Visual Studio Code utility to save time when developing web
+                  pages/components.
+                </p>
+                <div class="image-mouseover__row">
+                  <a
+                    class="image-mouseover__link"
+                    href="https://marketplace.visualstudio.com/items?itemName=NathanMinchow.create-matching-css-file"
+                    target="_blank"
+                    >View Project</a
+                  >
+                  <a
+                    class="image-mouseover__link image-mouseover__link--outline"
+                    href="https://github.com/nspenner/create-matching-css-vscode"
+                    target="_blank"
+                    >View Source</a
+                  >
+                </div>
+              </div>
+              <div
+                class="image-mouseover__column image-mouseover__column--full"
+              >
+                <ul
+                  class="image-mouseover__technology-list image-mouseover__technology-list--horizontal"
+                >
+                  <li>TypeScript</li>
+                </ul>
+              </div>
+            </div>
+            <img
+              class="project__image"
+              src="img/demo.gif"
+              alt="Demo of create matching css utility for Visual Studio Code"
+            />
+          </div>
+        </li>
+        <li class="project-list__item">
+          <h3 class="project__title project__title--right">Dark Mode</h3>
+          <div class="image-container">
+            <div class="image-mouseover image-mouseover--vertical">
+              <div class="image-mouseover__column">
+                <p class="image-mouseover__description">
+                  An implementation of dark mode in a site template using
+                  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/--*"
+                    >CSS Custom Properties</a
+                  >. I also wrote
+                  <a
+                    href="https://dev.to/nathanminchow/easy-website-themes-with-css-custom-properties-1pb7"
+                    >an article</a
+                  >
+                  about the power of CSS variables in theme customization.
+                </p>
+                <div class="image-mouseover__row">
+                  <a
+                    class="image-mouseover__link"
+                    href="https://nspenner.github.io/theme-lab/"
+                    target="_blank"
+                    >View Project</a
+                  >
+                  <a
+                    class="image-mouseover__link image-mouseover__link--outline"
+                    href="https://github.com/nspenner/theme-lab"
+                    target="_blank"
+                    >View Source</a
+                  >
+                </div>
+              </div>
+              <div
+                class="image-mouseover__column image-mouseover__column--full"
+              >
+                <ul
+                  class="image-mouseover__technology-list image-mouseover__technology-list--horizontal"
+                >
+                  <li>HTML5</li>
+                  <li>CSS</li>
+                  <li>JS</li>
+                </ul>
+              </div>
+            </div>
+            <img
+              class="project__image"
+              src="img/darkmode.gif"
+              alt="Demo of dark mode toggle using CSS Custom Properties"
+            />
+          </div>
+        </li>
+        <li class="project-list__item">
+          <h3 class="project__title project__title--bottom">Gradient Todo</h3>
+          <div class="image-container">
+            <div class="image-mouseover image-mouseover--vertical">
+              <div class="image-mouseover__column">
+                <p class="image-mouseover__description">
+                  A tiny frontend for a Todo app utilizing CSS gradients and
+                  pseudo-elements to achieve a dynamic gradient background.
+                </p>
+                <a
+                  class="image-mouseover__link"
+                  href="https://codepen.io/nathanspenner/pen/ZEEKMYN"
+                  target="_blank"
+                  >View Project</a
+                >
+              </div>
+              <div
+                class="image-mouseover__column image-mouseover__column--full"
+              >
+                <ul
+                  class="image-mouseover__technology-list image-mouseover__technology-list--horizontal"
+                >
+                  <li>HTML5</li>
+                  <li>CSS</li>
+                  <li>JS</li>
+                </ul>
+              </div>
+            </div>
+            <img
+              class="project__image"
+              src="img/todo.png"
+              alt="Gradient todo screenshot"
+            />
+          </div>
+        </li>
+      </ol>
+    </div>
+    <div role="presentation" class="positioned">
+      <div class="background-lines background-lines--alt">
+        <div class="background-lines__line"></div>
+        <div class="background-lines__line"></div>
+        <div class="background-lines__line"></div>
+        <div class="background-lines__line"></div>
+        <div class="background-lines__line"></div>
+      </div>
+    </div>
+    <div class="content-container cl-effect-7">
+      <div class="row">
+        <div class="list-container">
+          <h2>Contact</h2>
+          <ul class="contact-list">
+            <li class="contact-list__item">
+              <a target="_blank" href="mailto:nathan.minchow@outlook.com"
+                >Email</a
+              >
+            </li>
+            <li class="contact-list__item">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/nathan-minchow-b165baa5/"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="list-container">
+          <h2>Links</h2>
+          <ul class="link-list">
+            <li class="link-list__item">
+              <a target="_blank" href="https://github.com/nspenner">Github</a>
+            </li>
+            <li class="link-list__item">
+              <a target="_blank" href="https://codepen.io/nathanspenner"
+                >Codepen</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a target="_blank" href="https://dev.to/nathanminchow">DEV.to</a>
+            </li>
+            <li class="link-list__item">
+              <a target="_blank" href="doc/Resume2021.pdf">Resume</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </header>
-    <main>
-      <section id="title">
-        <h1>Hi, I'm Nathan Minchow</h1>
-        <p>
-          I'm a software developer, musician, and occasional X-Files binger.
-        </p>
-        <p>
-          I have extensive experience in web development, including internships
-          at Garmin, PaymentSpring/Nelnet, and First Data. More details are on
-          my <a href="doc/Resume2021.pdf">resume</a>.
-        </p>
-        <p>To see more of my work, take a look at some of my projects below.</p>
-      </section>
-      <section id="links">
-        <h2>Links</h2>
-        <p><a href="https://github.com/nspenner">Github</a></p>
-        <p><a href="https://codepen.io/nathanspenner">Codepen</a></p>
-        <p><a href="https://blog.nminchow.com">Blog</a></p>
-        <p><a href="https://dev.to/nathanminchow">DEV.to</a></p>
-        <p><a href="doc/Resume2021.pdf">Resume</a></p>
-      </section>
-      <section id="projects">
-        <h2>Projects</h2>
-        <p>
-          <a href="https://nspenner.github.io/werkweek">WerkWeek</a>: an app to
-          help manage time. Set alarms, countdowns, and more to help track your
-          day (or week!)
-        </p>
-        <p>
-          <a href="https://nspenner.github.io/nomo/"> nomo </a>: I created a
-          straightforward metronome that uses the Web Audio API to keep accurate
-          time and update dynamically.
-        </p>
-        <p>
-          <a
-            href="https://marketplace.visualstudio.com/items?itemName=NathanMinchow.create-matching-css-file"
-            >Create Matching CSS File</a
-          >: A VS Code utility to save some time when developing web
-          pages/components.
-        </p>
-        <p>
-          <a href="https://nspenner.github.io/theme-lab/">Dark-Mode</a>: I
-          implemented dark mode in a site template using
-          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/--*"
-            >CSS Custom Properties</a
-          >. I also wrote
-          <a
-            href="https://dev.to/nathanminchow/easy-website-themes-with-css-custom-properties-1pb7"
-            >an article</a
-          >
-          about the power of CSS variables in theme customization.
-        </p>
-        <p>
-          <a href="https://codepen.io/nathanspenner/pen/ZEEKMYN"
-            >Gradient Todo</a
-          >: A tiny frontend for a Todo app utilizing CSS gradients and
-          pseudo-elements.
-        </p>
-        <p>
-          <a href="dynamic_audio/dynamic_sound.html">Dynamic Audio Demo</a>: A
-          <a href="https://godotengine.org/">Godot</a> project created to
-          demonstrate dynamic audio tracks.
-        </p>
-      </section>
-      <section id="contact">
-        <h2>Contact</h2>
-        <p><a href="mailto:nathan.minchow@outlook.com">Email</a></p>
-        <p>
-          <a href="https://www.linkedin.com/in/nathan-minchow-b165baa5/"
-            >LinkedIn</a
-          >
-        </p>
-      </section>
-    </main>
+    </div>
   </body>
   <script src="scripts.js"></script>
 </html>
