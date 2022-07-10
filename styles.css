@@ -253,12 +253,12 @@ p {
   position: relative;
   height: 100%;
   max-height: 480px;
-  transition: box-shadow .3s;
+  transition: box-shadow 0.3s;
   box-shadow: -8px 8px 0 0 #ffd600, -0px 8px 0 0 #ffd600, -8px 0px 0 0 #ffd600;
 }
 
 .image-container:hover {
-	box-shadow: 8px -8px 0 0 #ffd600, 8px 0 0 0 #ffd600, 0 -8px 0 0 #ffd600;
+  box-shadow: 8px -8px 0 0 #ffd600, 8px 0 0 0 #ffd600, 0 -8px 0 0 #ffd600;
 }
 
 .image-mouseover {
@@ -278,7 +278,7 @@ p {
 
 .image-mouseover--vertical {
   flex-direction: column;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 
 .image-mouseover__column {
@@ -305,7 +305,7 @@ p {
 
 .image-mouseover__description > a {
   text-decoration: underline;
-  color:#ffd600;
+  color: #ffd600;
 }
 
 .image-mouseover__link {
@@ -319,7 +319,7 @@ p {
 }
 
 .image-mouseover__link:hover {
-  background: #FFED90;
+  background: #ffed90;
   color: black;
 }
 
@@ -330,7 +330,7 @@ p {
 }
 
 .image-mouseover__link--outline:hover {
-  border: 1px solid #FFED90
+  border: 1px solid #ffed90;
 }
 
 .image-mouseover__technology-list {
@@ -456,11 +456,11 @@ p {
     height: 480px;
     position: relative;
   }
-  
+
   .project__title--bottom {
     top: 16px;
   }
-  
+
   .project__title--right {
     align-self: flex-start;
   }
@@ -472,7 +472,7 @@ p {
   .project-list__item--wide {
     grid-column: span 1;
   }
-  
+
   .image-mouseover__column {
     justify-content: center;
   }
@@ -496,15 +496,15 @@ p {
   .image-mouseover__technology-list--horizontal {
     display: block;
   }
-  
+
   .image-mouseover__technology-list > li {
     margin: 1rem;
   }
-  
+
   .image-mouseover__technology-list--horizontal > li:first-child {
     margin-left: 1rem;
   }
-  
+
   .image-mouseover__technology-list--horizontal > li:last-child {
     margin-right: 1rem;
   }
@@ -516,7 +516,8 @@ p {
       --text-small: 14px;
     }
 
-    .image-mouseover, .image-mouseover--vertical {
+    .image-mouseover,
+    .image-mouseover--vertical {
       flex-direction: column;
       opacity: 1 !important;
     }
@@ -540,6 +541,11 @@ p {
     .list-container:last-child {
       margin-left: 0;
       margin-bottom: 1rem;
+    }
+
+    .contact-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
     }
   }
 }
