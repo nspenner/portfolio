@@ -76,7 +76,6 @@ body {
   font-family: var(--font-serif, "Libre Caslon Text", Georgia, serif);
   font-size: var(--text-small, 18px);
   color: var(--font-color--primary);
-  overflow-x: hidden;
 }
 
 p {
@@ -125,6 +124,10 @@ p {
 
 .description-container {
   margin-bottom: 3rem;
+}
+
+.project-title-container {
+  overflow-x: hidden;
 }
 
 .text-container {
